@@ -1,0 +1,18 @@
+[
+    {
+        "productId": 1,
+        "manufacturer": "Johns-Jenkins",
+        "sku": "p76750ufds8",
+        "pricePerUnit": "497.58",
+        "quantityOnHand": 9876,
+        "productName": "sticky note"
+    },
+    {
+        "productId": 2,
+        "manufacturer": "Mac-Cready",
+        "sku": "x987667YU",
+        "pricePerUnit": "800.58",
+        "quantityOnHand": 99999876,
+        "productName": "a pen"
+    }
+]

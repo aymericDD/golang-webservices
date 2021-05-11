@@ -6,6 +6,6 @@ type Product struct {
 	Sku				string 	`json:"sku"`
 	Upc				string 	`json:"upc"`
 	PricePerUnit	string 	`json:"pricePerUnit"`
-	QuantityOnland	int		`json:"quantityOnHand"`
+	QuantityOnHand	int		`json:"quantityOnHand"`
 	ProductName		string 	`json:"productName"`
 }

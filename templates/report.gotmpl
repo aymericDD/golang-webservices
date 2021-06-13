@@ -4,8 +4,32 @@
 <body>
 <h1>Product Summary Report</h1>
 <div>
-<span>Product Name: {{.ProductName}}</span>
-<span>Quantity On Hand: {{.QuantityOnHand}}</span>
+<table>
+<tr>
+<th>
+Index
+</th>
+<th>
+Name
+</th>
+<th>
+Quantity
+</th>
+</tr>
+{{range $index, $product := .}}
+<tr>
+<td>
+{{$index}}
+</td>
+<td>
+{{.ProductName}}
+</td>
+<td>
+{{.QuantityOnHand}}
+</td>
+</tr>
+{{end}}
+</table>
 </div>
 </body>
 </html>

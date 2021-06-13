@@ -45,9 +45,7 @@ func handleProductReport(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusNotFound)
 			return
 		}
-		var product Product
-		product = products[0]
-		err = t.Execute(&tmpl, product)
+		err = t.Execute(&tmpl, products)
 		rdr := bytes.NewReader(tmpl.Bytes())
 		w.Header().Set("Content-Disposition", "Attachement")
 		http.ServeContent(w, r , "report.html", time.Now(), rdr)
